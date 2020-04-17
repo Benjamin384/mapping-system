@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>calculation</title>
+<link rel="stylesheet" type="text/css" href="css/calculation.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    //隐藏子标题
+    $(".nav-menu").each(function(){
+        $(this).children(".nav-content").hide();
+    });
+    //给所有的主标题添加单击事件
+    $(".nav-title").each(function(){
+        $(this).click(function(){
+            var navEle=$(this).parents(".nav-menu").children(".nav-content");
+            if(navEle.css("display")!="none"){
+                //收起
+                navEle.slideUp(1000);
+            }
+            else{
+                //向下展开
+                navEle.slideDown(1000);
+            }
+
+        });
+    });
+
+    $(".nav-content a").on("click",function(){
+                var address =$(this).attr("id");
+                $("iframe").attr("src",address);
+            });
+
+
+});
+</script>
+</head>
+<body>
+<div class="content">
+    <div class="content-left">
+        <div class="left-title">
+            <a href="#">功能</a>
+        </div>
+        <div class="seg"></div>
+        <div class="nav">
+            <div class="nav-menu">
+                <div class="nav-title">坐标计算</div>
+                <div class="nav-content">
+                    <a id="reverse.html" href="javascript:void();">坐标反算</a>
+                    <a id="javascript:void();" href="javascript:void();">待拓展..</a>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-title">交会定点</div>
+                <div class="nav-content">
+                    <a id="frontjoint.html" href="javascript:void();">前方交会</a>
+                    <a id="distancejoint.html" href="javascript:void();">距离交会</a>
+                    <a id="javascript:void();" href="javascript:void();">待拓展..</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-right">
+        <iframe frameborder="0" scrolling="yes" style="width:100%;height:100%" id="aa"></iframe>
+    </div>
+</div>
+</body>
+</html>

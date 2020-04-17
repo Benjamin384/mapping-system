@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="css/loginform.css" />
+<link rel="stylesheet" href="css/iconfont.css" />
+<link rel="stylesheet" href="css/iconfont2.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/login.js"></script>
+</head>
+<body>
+    <div class="herder"><p><i class="iconfont icon-sanjiaojia"></i>测量数据处理系统</p></div>
+    <div class="main-left"><img src="img/left.jpg"/></div>
+    <div class="main-right">
+        <div class="login-wrap">
+            <form id="user_login" action="">
+                <h3>登 录</h3>
+                <input class="name" name="" id="accountName" type="text" placeholder="请输入用户名">
+                <input class="code" name="password" id="password" type="password" placeholder="请输入密码">
+                <div id="CheckMsg" class="msg"></div>
+                <div class="btn">
+                    <input type="button" id="submit" class="submit" value="登录" onclick="return check(this.form);">
+                    <input type="reset" id="reset"  class="reset" value="重置" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p><i class="iconfont2 icon-youxiang"></i>联系邮箱：1559239199@qq.com</p>
+    </div>
+</body>
+</html>

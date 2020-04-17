@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>坐标反算</title>
+<link rel="stylesheet" type="text/css" href="css/otherthree.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/calculation.js"></script>
+<script src="js/otherthree.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="content-left">
+        <div class="login-wrap">
+            <form id="user_login" action="">
+                <h3>坐标反算</h3>
+                <input class="X" id="xo" placeholder="请输入起点X值                        单位:m">
+                <input class="X" id="yo" placeholder="请输入起点Y值                        单位:m">
+                <input class="X" id="xe" placeholder="请输入终点X值                        单位:m">
+                <input class="X" id="ye" placeholder="请输入终点Y值                        单位:m">
+                <div id="CheckMsg" class="msg"></div>
+                <div class="btn">
+                    <input type="button" id="submit" class="submit" value="计算" onclick="return check(this.form);">
+                    <button id="reset"  class="reset" onclick="return clear(this.form);">清除</button>
+                </div>
+                <div id="blank" class="msg"></div>
+                <input class="result" id="distance" placeholder="距离">
+                <input class="result" id="angle1" placeholder="方位角">
+            </form>
+        </div>
+    </div>
+    <div class="content-right">
+        <canvas class="canv" id="MyCanvas"></canvas>
+    </div>
+</div>
+</body>
+</html>

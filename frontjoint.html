@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>前方交会</title>
+<link rel="stylesheet" type="text/css" href="css/otherthree.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/calculation.js"></script>
+<script src="js/otherthree.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="content-left">
+        <div class="login-wrap">
+            <form id="user_login" action="">
+                <h3>前方交会</h3>
+                <input class="X" id="xo" placeholder="已知坐标A X值                        单位:m">
+                <input class="X" id="yo" placeholder="已知坐标A Y值                        单位:m">
+                <input class="angle" id="angleA" placeholder="A所测水平角 a值                     单位:° ′ ″">
+                <input class="X" id="xe" placeholder="已知坐标B X值                        单位:m">
+                <input class="X" id="ye" placeholder="已知坐标B Y值                        单位:m">
+                <input class="angle" id="angleB" placeholder="B所测水平角 b值                     单位:° ′ ″">
+                <input class="X" id="sign" placeholder="A、B、P 顺时针排列，填1；否则填-1。">
+                <div id="CheckMsg" class="msg"></div>
+                <div class="btn">
+                    <input type="button" id="submit" class="submit" value="计算" onclick="return check2(this.form);">
+                    <button id="reset"  class="reset" onclick="return clear(this.form);">清除</button>
+                </div>
+                <div id="blank" class="msg"></div>
+                <input class="result" id="coordi" placeholder="坐标">
+            </form>
+        </div>
+    </div>
+    <div class="content-right">
+        <canvas class="canv" id="MyCanvas"></canvas>
+    </div>
+</div>
+</body>
+</html>

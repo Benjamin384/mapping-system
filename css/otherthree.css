@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.content-left{
+    width: 50%;
+    height: 936px;
+    background-color: white;
+    float: left;
+}
+.content-right{
+    width: 50%;
+    height: 936px;
+    background-color: white;
+    float: right;
+}
+
+/*下面为计算区域布局*/
+.login-wrap{
+    position: absolute;
+    width:320px;
+    height: 520x;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    right:1000px;
+    margin-top: 190px;
+    background: rgb(191, 241, 241);
+    background-size: 100%;
+}
+.login-wrap h3{
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+}
+.X,.Y,.dist,.angle,.result{
+    border:1px solid #fff;
+    width:230px;
+    height: 40px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    
+}
+.X{
+    background: url("../img/坐标.png") no-repeat left;
+    background-position-x:12px;
+}
+.Y{
+    background: url("../img/坐标.png") no-repeat left;
+    background-position-x:12px;
+}
+.dist{
+    background: url("../img/距离测量.png") no-repeat left;
+    background-position-x:12px;
+}
+.angle{
+    background: url("../img/角度.png") no-repeat left;
+    background-position-x:12px;
+}
+.btn input,button{
+    height: 40px;
+    width: 120px;
+    float: left;
+    margin-right: 25px;
+    border:none;
+    color:#fff;
+    font-size: 16px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input:active{border-color:#147a62}
+.submit{background: #ea8c37;margin-left: 25px;}
+.reset{background: #bbb;}
+/**错误信息提醒**/
+.msg{
+    color: #ea8c37;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-top: 10px;
+    clear: both;
+    font-weight: bold;
+}
+
+/*画布样式*/
+.canv{ 
+	width: 500px;
+    height: 500px; 
+    border:2px solid black;
+    border-radius:25px;
+    margin-top: 200px;
+    right:300px;
+}
